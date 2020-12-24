@@ -1,0 +1,21 @@
+class Paperball{
+
+constructer(x, y, radius);
+
+var options={
+    isstatic : false;
+    resstitution : 0.3,
+    friction : 0.5
+    density : 0.2
+
+}
+
+Matter.Bodies.circle(5, 5, 2.5);
+
+function keyPressed(){
+    if (keycode === UP_ARROW){
+        Matter.Body.applyForce(paperball.body, paperball.body.positions,{x:85,y:85})
+    }
+}
+World.add(World, this.body); 
+}
